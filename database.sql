@@ -60,3 +60,8 @@ VALUES ('Bode', 'Mnneapolis', 5, 12, 250.45);
 -- 9.The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: How do you delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
 DELETE  FROM "accounts"
 WHERE ("city" = 'miami' OR "city" = 'phoenix') AND "transactions_completed" < 5;
+
+-- STRETCH GOALS
+-- Anthony moved to Santa Fe
+UPDATE "accounts" SET "city" = 'Santa Fe' WHERE "username" = 'anthony';
+DELETE FROM "accounts" WHERE "username" = 'grace';
